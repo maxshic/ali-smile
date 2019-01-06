@@ -1,0 +1,227 @@
+page{
+  font-family: '黑体';
+}
+.header{
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+.count-content{
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.count-content .happy-people{
+  width: 50%;
+  height: 160rpx;
+  background-color: #faf8f9;
+}
+.count-content .donate-people{
+  width: 50%;
+  height: 160rpx;
+  background-color: #f3f1f2;
+}
+.count-up{
+  text-align: center;
+  margin: 20rpx 0 5rpx 0;
+}
+.count-up .count-number{
+  /* font-family: Arial-BoldMT; */
+  font-weight: bold;
+  color: #f0a973;
+  font-size: 60rpx;
+  margin: 0 5rpx;
+}
+.count-up .count-last{
+  color: #666;
+  margin: 0 5rpx;
+}
+.count-down{
+  text-align: center;
+  margin: 5rpx 0 20rpx 0;
+}
+.count-down .count-poeple{
+  font-family: '黑体';
+  color: #666;
+  font-size: 25rpx;
+}
+
+.swiper-content{
+  position: relative;
+  width: 650rpx;
+  margin: 50rpx auto 20rpx auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, .15);
+  overflow: hidden;
+}
+.swiper-content .slide-image{
+  display: block;
+  width: 650rpx;
+  border-radius: 10px;
+  /* box-shadow: 0 0 5px 5px #000; */
+}
+.swiper-content .swiper-banner{
+  position: absolute;
+  width: 100%;
+  height: 55rpx;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .15);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.devider-bottom{
+  /* margin-bottom: 100rpx; */
+  padding-bottom: 30rpx;
+  background-color: #fff;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, .15);
+}
+.devider-bottom .swiper-title{
+  text-align: center;
+  font-size: 30rpx;
+  color: #333;
+  margin: 20rpx 0;
+}
+.devider-bottom .swiper-text{
+  text-align: center;
+  font-size: 25rpx;
+  color: #333;
+  margin: 10rpx 0;
+}
+.main-title{
+  width: 50%;
+  height: 60rpx;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(left, #fceee3 , #fff); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #fceee3 , #fff); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #fceee3 , #fff); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #fceee3 , #fff); /* 标准的语法 */
+  margin: 50rpx auto 50rpx auto;
+  text-align: center;
+}
+.main-title view{
+  color: #666;
+  font-size: 40rpx;
+  transform: translateY(80%);
+}
+.main-container{
+  position: relative;
+  width: calc(100% - 60rpx);
+  /* height: 500rpx; */
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #fffcfa;
+  box-shadow: -3px -3px 8px #fceee3;
+  padding: 20rpx 30rpx 20rpx 30rpx;
+}
+.main-container .container-title{
+  width: 200rpx;
+  height: 30rpx;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(left, #fceee3 , #fff); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #fceee3 , #fff); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #fceee3 , #fff); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #fceee3 , #fff); /* 标准的语法 */
+  margin: 50rpx 0rpx 50rpx 0rpx;
+  text-align: center;
+}
+.main-container .container-title view{
+  color: #f0a973;
+  font-size: 40rpx;
+  transform: translateY(10%);
+}
+.main-container .main-img{
+  display: block;
+  position: absolute;
+  width: 200rpx;
+  top: 0;
+  right: 30rpx;
+}
+.main-container .container-text{
+  color: #555;
+  line-height: 2;
+  text-indent: 2em;
+}
+.advantage-content{
+  position: relative;
+}
+.advantage-content .advantage-bg{
+  display: block;
+  width: 100%;
+}
+.advantage-content .advantage-title{
+  position: absolute;
+  width: 100%;
+  top: 100rpx;
+  font-size: 40rpx;
+  color: #f0a973;
+  text-align: center;
+  z-index: 999;
+}
+.advantage-content .advantage-items{
+  position: absolute;
+  width: 100%;
+  height: 200rpx;
+  /* background-color: skyblue; */
+  bottom: 110rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.advantage-content .advantage-items .advantage-item{
+  width: 180rpx;
+  height: 180rpx;
+  border: 3px solid #f0a973;
+  border-radius: 50%;
+  box-shadow: -5px 0 5px #fceee3;
+  background-color: #fff;
+}
+.advantage-item{
+  position: relative;
+}
+.advantage-item .item-text{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #555;
+  font-size: 25rpx;
+  top: 50rpx;
+}
+.advantage-item .item-more{
+  position: absolute;
+  width: 130rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border-radius: 1000px;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+  background: -webkit-linear-gradient(left, #f4cb7e , #ef8d57); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #f4cb7e , #ef8d57); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #f4cb7e , #ef8d57); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #f4cb7e , #ef8d57); /* 标准的语法 */
+  bottom: 50rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.donate-title{
+  position: absolute;
+  left: 40rpx;
+  bottom: 0;
+}
+.donate-title text:first-child{
+  font-size: 32rpx;
+  color: #333;
+  margin-right: 10rpx;
+}
+.donate-title text:nth-child(2){
+  font-size: 25rpx;
+  color: #666;
+}
+.donate-container{
+  width: calc(100% - 80rpx);
+  margin: auto;
+  background-color: skyblue;
+}

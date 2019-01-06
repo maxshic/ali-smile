@@ -1,0 +1,98 @@
+<view class="page-todos">
+	<image class="header" src="http://115.159.63.133/img/123_01.png" mode="widthFix" onError="error" />
+  <view class="count-content">
+    <view class="happy-people">
+      <view class="count-up">
+        <text class="count-number">7.1</text><text class="count-last">万</text>
+      </view>
+      <view class="count-down">
+        <text class="count-poeple">项目受益总人数</text>
+      </view>
+    </view>
+    <view class="donate-people">
+      <view class="count-up">
+        <text class="count-number">278</text><text class="count-last">万</text>
+      </view>
+      <view class="count-down">
+        <text class="count-poeple">总捐款人数</text>
+      </view>
+    </view>
+  </view>
+  <view class="swiper-content">
+    <swiper indicator-dots="{{true}}" indicator-color="rgba(170,170,170,.3)" indicator-active-color="rgba(60,60,60,.3)" autoplay="{{true}}" circular="{{true}}">
+        <swiper-item>
+          <image src="http://115.159.63.133/img/banner_03.png" class="slide-image" mode="widthFix"/>
+        </swiper-item>
+        <swiper-item>
+          <image src="http://115.159.63.133/img/banner1_03.png" class="slide-image" mode="widthFix"/>
+        </swiper-item>
+        <swiper-item>
+          <image src="http://115.159.63.133/img/banner2_03.png" class="slide-image" mode="widthFix"/>
+        </swiper-item>
+    </swiper>
+    <view class="swiper-banner"></view>
+  </view>
+  <view class="devider-bottom">
+    <view class="swiper-title">
+      <text>谢谢你让我无所顾忌地微笑</text>
+    </view>
+    <view class="swiper-text">
+      <text>小敏14年在资阳接受了免费的手术</text>
+    </view>
+  </view>
+  <view class="main-title">
+    <view>兔唇宝宝的微笑</view>
+  </view>
+  <view class="main-container">
+    <view class="container-title">
+      <view>项目介绍</view>
+    </view>
+    <image class="main-img" src="http://115.159.63.133/img/123_03.png" mode="widthFix" />
+    <view class="container-text">
+      <text>微笑明天慈善基金会通过与偏远地区的医院合作，由医院和政府部门招募唇腭裂患者，微笑明天慈善基金会负责组建志愿者医疗队伍去偏远地区为唇腭裂患儿提供集中免费修复手术，并免除所有医疗费用。</text>
+    </view>
+    <view class="container-text">
+      <text>“兔唇宝宝的微笑”项目是专门为贫困及低收入家庭的唇腭裂及面部畸形的患儿提供免费治疗的慈善项目，在全球爱心人士与合作机构的支持下，累计已为全球超过7万名唇腭裂患者提供了优质的免费手术。</text>
+    </view>
+  </view>
+  <view class="advantage-content">
+    <image class="advantage-bg" src="http://115.159.63.133/img/b_03.png" mode="widthFix" />
+    <view class="advantage-title">
+      <text>我们的优势</text>
+    </view>
+    <view class="advantage-items">
+      <view class="advantage-item">
+        <view class="item-text">
+          <text>受益人数</text>
+        </view>
+        <view class="item-more">
+          <text>众多</text>
+        </view>
+      </view>
+      <view class="advantage-item">
+        <view class="item-text">
+          <text>善款使用</text>
+        </view>
+        <view class="item-more">
+          <text>高效</text>
+        </view>
+      </view>
+      <view class="advantage-item">
+        <view class="item-text">
+          <text>医疗团队</text>
+        </view>
+        <view class="item-more">
+          <text>专业</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="donate-title">
+      <text>单笔捐</text>
+      <text>一次微笑，改变一生</text>
+    </view>
+  </view>
+  <view class="donate-container">
+    <view class="money-content"></view>
+  </view>
+</view>

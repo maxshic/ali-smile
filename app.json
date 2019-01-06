@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "pages/todos/todos"
+  ],
+  "window": {
+    "defaultTitle": "兔唇宝宝的微笑",
+    "titleBarColor": "#fff"
+  }
+}
