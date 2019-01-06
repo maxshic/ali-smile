@@ -223,5 +223,22 @@ page{
 .donate-container{
   width: calc(100% - 80rpx);
   margin: auto;
-  background-color: skyblue;
+  /* background-color: skyblue; */
+  box-sizing: border-box;
+  padding: 20rpx 0;
+}
+.donate-container .money-content{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.donate-container .money-label{
+  width: 180rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #ec702d;
+  border: 1px solid #c9c9c9;
+  font-size: 32rpx;
 }

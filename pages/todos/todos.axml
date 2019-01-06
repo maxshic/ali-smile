@@ -93,6 +93,10 @@
     </view>
   </view>
   <view class="donate-container">
-    <view class="money-content"></view>
+    <view class="money-content">
+      <view class="money-label">20元</view>
+      <view class="money-label">50元</view>
+      <view class="money-label">100元</view>
+    </view>
   </view>
 </view>
