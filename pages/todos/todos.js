@@ -7,11 +7,12 @@ Page({
 
 	onLoad() {
 		console.log(new Date().getTime())
-	},
-  btnTap(){
     app.getUserInfo().then(res => {
       console.log(res)
     }).catch(err => {})
+	},
+  btnTap(){
+    
   },
   error(e){
     console.log(e)
