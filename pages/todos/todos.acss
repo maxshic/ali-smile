@@ -242,3 +242,7 @@ page{
   border: 1px solid #c9c9c9;
   font-size: 32rpx;
 }
+.btn-container .btn{
+  background-color: #ef8c36;
+  color: #fff;
+}

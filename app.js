@@ -5,31 +5,31 @@ App({
   //   { text: 'Learning 支付宝小程序', completed: false },
   // ],
 
-  // userInfo: null,
+  userInfo: null,
 
-  // getUserInfo() {
-  //   return new Promise((resolve, reject) => {
-  //     if (this.userInfo) resolve(this.userInfo);
+  getUserInfo() {
+    return new Promise((resolve, reject) => {
+      if (this.userInfo) resolve(this.userInfo);
 
-  //     my.getAuthCode({
-  //       scopes: ['auth_user'],
-  //       success: authcode => {
-  //         console.info(authcode);
+      my.getAuthCode({
+        scopes: ['auth_user'],
+        success: authcode => {
+          console.info(authcode);
 
-  //         my.getAuthUserInfo({
-  //           success: res => {
-  //             this.userInfo = res;
-  //             resolve(this.userInfo);
-  //           },
-  //           fail: () => {
-  //             reject({});
-  //           },
-  //         });
-  //       },
-  //       fail: () => {
-  //         reject({});
-  //       },
-  //     });
-  //   });
-  // },
+          my.getAuthUserInfo({
+            success: res => {
+              this.userInfo = res;
+              resolve(this.userInfo);
+            },
+            fail: () => {
+              reject({});
+            },
+          });
+        },
+        fail: () => {
+          reject({});
+        },
+      });
+    });
+  },
 });

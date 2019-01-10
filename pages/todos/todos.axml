@@ -99,4 +99,7 @@
       <view class="money-label">100元</view>
     </view>
   </view>
+  <view class="btn-container">
+    <button class="btn" type="default" onTap="btnTap" hover-class="null">爱心捐赠</button>
+  </view>
 </view>
