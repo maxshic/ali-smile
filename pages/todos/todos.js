@@ -5,7 +5,11 @@ import sha512 from 'js-sha512'
 Page({
 	data: {
     userid: '',
-    totalamount: 0
+    totalamount: 0,
+    a20: 'actived',
+    a50: '',
+    a100: '',
+    amy: ''
   },
 
 	onLoad() {
@@ -31,6 +35,41 @@ Page({
       });
     }).catch(err => {})
 	},
+  swiperchange(e){
+    console.log(e)
+  },
+  tap20(){
+    this.setData({
+      a20: 'actived',
+      a50: '',
+      a100: '',
+      amy: ''
+    })
+  },
+  tap50(){
+    this.setData({
+      a20: '',
+      a50: 'actived',
+      a100: '',
+      amy: ''
+    })
+  },
+  tap100(){
+    this.setData({
+      a20: '',
+      a50: '',
+      a100: 'actived',
+      amy: ''
+    })
+  },
+  tapmy(){
+    this.setData({
+      a20: '',
+      a50: '',
+      a100: '',
+      amy: 'actived'
+    })
+  },
   btnTap(){
     my.showLoading({
       content: '加载中'

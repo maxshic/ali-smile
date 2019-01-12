@@ -234,6 +234,7 @@ page{
   justify-content: space-between;
 }
 .donate-container .money-label{
+  position: relative;
   width: 180rpx;
   height: 80rpx;
   line-height: 80rpx;
@@ -241,6 +242,45 @@ page{
   color: #ec702d;
   border: 1px solid #c9c9c9;
   font-size: 32rpx;
+  margin-bottom: 20rpx;
+}
+.donate-container .money-label .triangle{
+  display: none;
+}
+.donate-container .money-label.actived{
+  border: 1px solid #ec702d;
+}
+.donate-container .money-label.actived .triangle{
+  display: block;
+  width: 30rpx;
+  height: 26rpx;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.donate-container .money-label.ipt{
+  position: relative;
+  width: 300rpx;
+  text-align: left;
+  line-height: 80rpx;
+}
+.donate-container .money-label.ipt .yuan{
+  position: absolute;
+  color: #333;
+  right: 20rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.donate-container .money-label.ipt input{
+  width: 200rpx;
+  height: 80rpx;
+  border: none;
+  padding: 0;
+  margin-left: 30rpx;
+}
+.btn-container{
+  width: 600rpx;
+  margin: auto;
 }
 .btn-container .btn{
   background-color: #ef8c36;

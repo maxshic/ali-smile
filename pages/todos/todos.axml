@@ -1,5 +1,5 @@
 <view class="page-todos">
-	<image class="header" src="http://115.159.63.133/img/123_01.png" mode="widthFix" onError="error" />
+	<image class="header" src="../../assets/123_01.png" mode="widthFix" onError="error" />
   <view class="count-content">
     <view class="happy-people">
       <view class="count-up">
@@ -19,15 +19,15 @@
     </view>
   </view>
   <view class="swiper-content">
-    <swiper indicator-dots="{{true}}" indicator-color="rgba(170,170,170,.3)" indicator-active-color="rgba(60,60,60,.3)" autoplay="{{true}}" circular="{{true}}">
+    <swiper indicator-dots="{{true}}" onChange="swiperchange" indicator-color="rgba(170,170,170,.3)" indicator-active-color="rgba(60,60,60,.3)" autoplay="{{true}}" circular="{{true}}">
         <swiper-item>
-          <image src="http://115.159.63.133/img/banner_03.png" class="slide-image" mode="widthFix"/>
+          <image src="../../assets/banner_03.png" class="slide-image" mode="widthFix"/>
         </swiper-item>
         <swiper-item>
-          <image src="http://115.159.63.133/img/banner1_03.png" class="slide-image" mode="widthFix"/>
+          <image src="../../assets/banner1_03.png" class="slide-image" mode="widthFix"/>
         </swiper-item>
         <swiper-item>
-          <image src="http://115.159.63.133/img/banner2_03.png" class="slide-image" mode="widthFix"/>
+          <image src="../../assets/banner2_03.png" class="slide-image" mode="widthFix"/>
         </swiper-item>
     </swiper>
     <view class="swiper-banner"></view>
@@ -47,7 +47,7 @@
     <view class="container-title">
       <view>项目介绍</view>
     </view>
-    <image class="main-img" src="http://115.159.63.133/img/123_03.png" mode="widthFix" />
+    <image class="main-img" src="../../assets/123_03.png" mode="widthFix" />
     <view class="container-text">
       <text>微笑明天慈善基金会通过与偏远地区的医院合作，由医院和政府部门招募唇腭裂患者，微笑明天慈善基金会负责组建志愿者医疗队伍去偏远地区为唇腭裂患儿提供集中免费修复手术，并免除所有医疗费用。</text>
     </view>
@@ -56,7 +56,7 @@
     </view>
   </view>
   <view class="advantage-content">
-    <image class="advantage-bg" src="http://115.159.63.133/img/b_03.png" mode="widthFix" />
+    <image class="advantage-bg" src="../../assets/b_03.png" mode="widthFix" />
     <view class="advantage-title">
       <text>我们的优势</text>
     </view>
@@ -94,9 +94,18 @@
   </view>
   <view class="donate-container">
     <view class="money-content">
-      <view class="money-label">20元</view>
-      <view class="money-label">50元</view>
-      <view class="money-label">100元</view>
+      <view class="money-label {{a20}}" onTap="tap20">20元
+        <image src="../../assets/actived_03.png" class="triangle" mode="aspectFit" />
+      </view>
+      <view class="money-label {{a50}}" onTap="tap50">50元
+        <image src="../../assets/actived_03.png" class="triangle" mode="aspectFit" />
+      </view>
+      <view class="money-label {{a100}}" onTap="tap100">100元
+        <image src="../../assets/actived_03.png" class="triangle" mode="aspectFit" />
+      </view>
+      <view class="money-label ipt {{amy}}">
+        <input type="digit" onFocus="tapmy" placeholder="自定义金额" /><text class="yuan">元</text><image src="../../assets/actived_03.png" class="triangle" mode="aspectFit" />
+      </view>
     </view>
   </view>
   <view class="btn-container">
